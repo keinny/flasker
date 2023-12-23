@@ -1,0 +1,17 @@
+<h1>Hello World</h1>
+
+<p> this is a webpage<p>
+
+<p> my name is {{first_name}} <p>
+
+<h3>Favourite Pizza</h3>
+
+{%for topoing in  favourite_piza %}
+    {%if topoing == 'fish'%}
+        {{topoing + "rundown"}}
+    {%endif%}
+    {{topoing}}<br>
+{% endfor %}
+
+<br>
+{{ favourite_piza.2}}
